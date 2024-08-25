@@ -1,4 +1,4 @@
-# GarbageCollectionGo
+# Workshop Garbage Collection Go (Example)
 
 Este proyecto contiene dos ejemplos de cómo se maneja el Garbage Collection (GC) en Go. Cada ejemplo está configurado para ejecutarse en un contenedor Docker y se puede usar para analizar cómo el Garbage Collection afecta el rendimiento de las aplicaciones Go.
 

@@ -8,8 +8,17 @@ Este proyecto contiene dos ejemplos de cómo se maneja el Garbage Collection (GC
 
 ## Requisitos Previos
 
+- Homebrew
+    - [Instalación en macOS](https://brew.sh/)
 - Docker
+    - [Instalación en macOS](https://docs.docker.com/desktop/install/mac-install/)
+    - [Instalación en Windows](https://docs.docker.com/desktop/install/windows-install/)
+    - [Instalación en Linux](https://docs.docker.com/desktop/install/linux-install/)
 - Go (si deseas ejecutar el código fuera de Docker)
+    - [Instalación en macOS/Windows/Linux](https://go.dev/doc/install)
+- git (si deseas ejecutar el código fuera de Docker)
+    - [Instalación en macOS/Windows/Linux](https://git-scm.com/downloads
+
 
 ## Cómo Construir y Ejecutar los Contenedores
 
@@ -30,13 +39,13 @@ Este proyecto contiene dos ejemplos de cómo se maneja el Garbage Collection (GC
 3. Ejecuta el contenedor:
 
     ```bash
-    docker run -d -p 8080:8080 -p 6160:6060 --name gc-example1-container gc-example1
+    docker run -d -p 8180:8080 -p 6160:6060 --name gc-example1-container gc-example1
     ```
 
 4. Accede al servicio desde el navegador o usando `curl`:
 
     ```bash
-    curl http://localhost:8080/allocate
+    curl http://localhost:8180/allocate
     ```
 
 5. Analiza el GC y otros perfiles:
@@ -62,13 +71,13 @@ Este proyecto contiene dos ejemplos de cómo se maneja el Garbage Collection (GC
 3. Ejecuta el contenedor:
 
     ```bash
-    docker run -d -p 8081:8080 -p 6260:6060 --name gc-example2-container gc-example2
+    docker run -d -p 8280:8080 -p 6260:6060 --name gc-example2-container gc-example2
     ```
 
 4. Accede al servicio desde el navegador o usando `curl`:
 
     ```bash
-    curl http://localhost:8081/allocate
+    curl http://localhost:8280/allocate
     ```
 
 5. Analiza el GC y otros perfiles:
@@ -98,8 +107,6 @@ Puedes utilizar `go tool pprof` para analizar el uso de CPU y memoria de cada co
     ```bash
     go tool pprof http://localhost:6160/debug/pprof/trace
     ```
-
-Repite los mismos comandos para `example2`, cambiando los puertos según corresponda (`6260` en lugar de `6160`).
 
 ## Conclusión
 

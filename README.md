@@ -17,7 +17,7 @@ Este proyecto contiene dos ejemplos de cómo se maneja el Garbage Collection (GC
 - Go (si deseas ejecutar el código fuera de Docker)
     - [Instalación en macOS/Windows/Linux](https://go.dev/doc/install)
 - git (si deseas ejecutar el código fuera de Docker)
-    - [Instalación en macOS/Windows/Linux](https://git-scm.com/downloads
+    - [Instalación en macOS/Windows/Linux](https://git-scm.com/downloads)
 
 
 ## Cómo Construir y Ejecutar los Contenedores
